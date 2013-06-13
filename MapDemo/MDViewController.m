@@ -7,6 +7,7 @@
 //
 
 #import "MDViewController.h"
+#import "RMOpenCycleMapSource.h"
 
 @interface MDViewController ()
 
@@ -17,7 +18,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSObject<RMTileSource> *source= nil;
+
+    source = [[RMMBTilesSource alloc] initWithTileSetResource:@"DemoMap" ofType:@"mbtiles"];
+    
+    /*
+     other sources possible:
+    source = [[RMOpenCycleMapSource alloc] init];
+     */
+    
+    
+    
+    RMMapView* mapView = [[RMMapView alloc] initWithFrame:self.view.bounds
+                                            andTilesource:source];
+    
+    mapView.zoom = 8.;
+    mapView.showLogoBug = NO;
+    mapView.maxZoom = 16.;
+    mapView.userTrackingMode = RMUserTrackingModeFollow;
+    mapView.showsUserLocation = YES;
+    
+    mapView.autoresizingMask =
+        UIViewAutoresizingFlexibleHeight |
+        UIViewAutoresizingFlexibleWidth;
+    
+    [mapView.tileCache addCache:[[RMDatabaseCache alloc] initUsingCacheDir:NO]];
+    [self.view addSubview:mapView];
 }
 
 - (void)didReceiveMemoryWarning

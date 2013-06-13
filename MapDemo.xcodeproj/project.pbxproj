@@ -19,7 +19,31 @@
 		61845047176A05D10083289E /* MDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61845046176A05D10083289E /* MDViewController.m */; };
 		6184504A176A05D10083289E /* MDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61845048176A05D10083289E /* MDViewController_iPhone.xib */; };
 		6184504D176A05D10083289E /* MDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6184504B176A05D10083289E /* MDViewController_iPad.xib */; };
+		6184506F176A0A1F0083289E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6184506E176A0A1F0083289E /* CoreLocation.framework */; };
+		61845071176A0A420083289E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61845070176A0A420083289E /* libz.dylib */; };
+		61845073176A0A4A0083289E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61845072176A0A4A0083289E /* libsqlite3.dylib */; };
+		61845074176A0A6A0083289E /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6184506B176A098F0083289E /* libMapBox.a */; };
+		61845075176A0A900083289E /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6184506D176A098F0083289E /* MapBox.bundle */; };
+		61845077176A0BFD0083289E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61845076176A0BFD0083289E /* QuartzCore.framework */; };
+		6198B186176A0EEF000895B1 /* DemoMap.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 6198B185176A0EEF000895B1 /* DemoMap.mbtiles */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6184506A176A098F0083289E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61845065176A098F0083289E /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		6184506C176A098F0083289E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61845065176A098F0083289E /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6184502A176A05D10083289E /* MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +63,12 @@
 		61845046176A05D10083289E /* MDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
 		61845049176A05D10083289E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDViewController_iPhone.xib; sourceTree = "<group>"; };
 		6184504C176A05D10083289E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDViewController_iPad.xib; sourceTree = "<group>"; };
+		61845065176A098F0083289E /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		6184506E176A0A1F0083289E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		61845070176A0A420083289E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		61845072176A0A4A0083289E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		61845076176A0BFD0083289E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6198B185176A0EEF000895B1 /* DemoMap.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; name = DemoMap.mbtiles; path = ../../../../../Volumes/Pisa/maps/DemoMap.mbtiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6184502E176A05D10083289E /* UIKit.framework in Frameworks */,
-				61845030176A05D10083289E /* Foundation.framework in Frameworks */,
+				61845077176A0BFD0083289E /* QuartzCore.framework in Frameworks */,
+				61845073176A0A4A0083289E /* libsqlite3.dylib in Frameworks */,
+				61845071176A0A420083289E /* libz.dylib in Frameworks */,
 				61845032176A05D10083289E /* CoreGraphics.framework in Frameworks */,
+				6184506F176A0A1F0083289E /* CoreLocation.framework in Frameworks */,
+				6184502E176A05D10083289E /* UIKit.framework in Frameworks */,
+				61845074176A0A6A0083289E /* libMapBox.a in Frameworks */,
+				61845030176A05D10083289E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +93,7 @@
 		61845021176A05D10083289E = {
 			isa = PBXGroup;
 			children = (
+				61845065176A098F0083289E /* MapView.xcodeproj */,
 				61845033176A05D10083289E /* MapDemo */,
 				6184502C176A05D10083289E /* Frameworks */,
 				6184502B176A05D10083289E /* Products */,
@@ -75,6 +111,10 @@
 		6184502C176A05D10083289E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61845076176A0BFD0083289E /* QuartzCore.framework */,
+				61845072176A0A4A0083289E /* libsqlite3.dylib */,
+				61845070176A0A420083289E /* libz.dylib */,
+				6184506E176A0A1F0083289E /* CoreLocation.framework */,
 				6184502D176A05D10083289E /* UIKit.framework */,
 				6184502F176A05D10083289E /* Foundation.framework */,
 				61845031176A05D10083289E /* CoreGraphics.framework */,
@@ -106,8 +146,18 @@
 				6184503F176A05D10083289E /* Default.png */,
 				61845041176A05D10083289E /* Default@2x.png */,
 				61845043176A05D10083289E /* Default-568h@2x.png */,
+				6198B185176A0EEF000895B1 /* DemoMap.mbtiles */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61845066176A098F0083289E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6184506B176A098F0083289E /* libMapBox.a */,
+				6184506D176A098F0083289E /* MapBox.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +200,12 @@
 			mainGroup = 61845021176A05D10083289E;
 			productRefGroup = 6184502B176A05D10083289E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 61845066176A098F0083289E /* Products */;
+					ProjectRef = 61845065176A098F0083289E /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				61845029176A05D10083289E /* MapDemo */,
@@ -157,17 +213,36 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6184506B176A098F0083289E /* libMapBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapBox.a;
+			remoteRef = 6184506A176A098F0083289E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6184506D176A098F0083289E /* MapBox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapBox.bundle;
+			remoteRef = 6184506C176A098F0083289E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		61845028176A05D10083289E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				61845038176A05D10083289E /* InfoPlist.strings in Resources */,
+				61845075176A0A900083289E /* MapBox.bundle in Resources */,
 				61845040176A05D10083289E /* Default.png in Resources */,
 				61845042176A05D10083289E /* Default@2x.png in Resources */,
 				61845044176A05D10083289E /* Default-568h@2x.png in Resources */,
 				6184504A176A05D10083289E /* MDViewController_iPhone.xib in Resources */,
 				6184504D176A05D10083289E /* MDViewController_iPad.xib in Resources */,
+				6198B186176A0EEF000895B1 /* DemoMap.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +314,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./mapbox-ios-sdk/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -264,6 +340,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./mapbox-ios-sdk/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -313,6 +390,7 @@
 				61845052176A05D10083289E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

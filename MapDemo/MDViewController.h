@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDViewController : UIViewController
+@interface MDViewController : UIViewController<RMMapViewDelegate>
 
 @end
