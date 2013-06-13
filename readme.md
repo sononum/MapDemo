@@ -1,4 +1,6 @@
-# Cocoa Heads Vortrag
+# Mapbox, Mapviews, Tilemill and more...
+
+## Ulrich Zurucker @ Cocoa Heads Munich,  2013-06-13
 
 Some things about mapbox, Tilemill, OSM & more (german)
 
