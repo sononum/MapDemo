@@ -1,6 +1,6 @@
 # Mapbox, Mapviews, Tilemill and more...
 
-## Ulrich Zurucker @ Cocoa Heads Munich,  2013-06-13
+## Ulrich Zurucker @ [Cocoa Heads Munich](http://cocoaheads.org/de/Munich/),  2013-06-13
 
 Some things about mapbox, Tilemill, OSM & more (german)
 
